@@ -5,13 +5,13 @@ using Microsoft.Extensions.Logging;
 
 namespace Auth
 {
-    public class Function1
+    public class AuthExample
     {
         private readonly ILogger _logger;
 
-        public Function1(ILoggerFactory loggerFactory)
+        public AuthExample(ILoggerFactory loggerFactory)
         {
-            _logger = loggerFactory.CreateLogger<Function1>();
+            _logger = loggerFactory.CreateLogger<AuthExample>();
         }
 
         [Function("MyEndPoint")]
